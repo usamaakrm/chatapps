@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(128, 128, 128, 0.095);
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.chat-app{
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+.chat-container{
+    width: 600px;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+}
+
+.profile-bar{
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.517);
+    padding: 0 10px;
+}
+.dp{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 15px;
+    left: 4rem !important;
+    position: absolute;
+    top: 0rem;
+    border: 4px solid #d7b690;
+}
+
+.back{
+    top: 2.3rem;
+    position: absolute;
+    left: 1rem;
+}
+.user-name{
+    left: 9rem !important;
+    top: 2.5rem;
+    position: absolute;
+}
+
+.user-name span{
+    color: grey;
+}
+
+.info{
+    position: absolute;
+    right: 2.5rem;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 60px;
+}
+
+.dot{
+    color: #00dd30;
+    font-size: 70px;
+    margin-left: 6.2rem;
+    z-index: 50;top: 1rem;
+    position: relative;
+}
+.bottom-section{
+    position: absolute;
+    width: 570px;
+    bottom: 0;
+    padding: 5px 0px;
+    justify-content: center;
+    padding: 10px 1rem;
+    overflow-x: hidden;
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid rgba(128, 128, 128, 0.474);
+}
+
+.chat-section h5{
+    width: 300px;
+    height:100%;
+    margin: 0 1rem;
+}
+
+.chat-section{
+    overflow-y: scroll;
+    height: 80%;
+}
+
+
+
+.cht-sec{
+    border-radius: 10px 15px 15px 0;
+    padding: 10px;
+    width: 350px;
+    padding-bottom: 2rem;
+}
+
+.cht-sec h5{
+    max-width: 60%;
+    margin-left: 70px;
+    margin-top: -45px;
+    background-color: #d9d9d961;
+    border-radius: 15px 10px 10px 0;
+    padding: 10px 10px;
+}
+.cht-sec h4{
+    width: 300px;
+    margin-left: 70px;
+    margin-top: -45px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.cht-sec img{
+    border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
+}
+
+#t1, #t2, #t3,#t4,#t5,#t6,#t7,#t8,#t9, #h2, #h3,#h4, #h5,#h6, #h7, #h8, #h9{
+    display: none;
+}
+
+.picture{
+    background-color: #d9d9d961;
+    border-radius: 10px 20px 20px 0;
+    padding: 10px 10px;
+    margin-left: 4rem;
+    margin-top: -3.5rem;
+}
+
+.picture img{
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 10px !important;
+}
+
+.input-box{
+    width: 100% !important;
+    height: 40px;
+    border: 1px solid grey;
+    padding: 0 10px;
+    border-radius: 60px;
+    margin: 0 0px 0 20px;
+    align-items: center;
+    margin-top: 5px;
+}
+.input-box input{
+    width: 100px !important;
+    /* height: 20px; */
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+.arrows{
+    /* margin-left: 70px; */
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+}
+
+.add{
+    margin-top: 10px;
+}
+
+.flex-btn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 25rem;
+}
+
+.flex-btn button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    /* margin:0 1rem; */
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.red{
+    color: red;
+    font-size: 1rem;
+}
+  
+
+    @media only screen and (max-width: 650px) {
+        .chat-container{
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .bottom-section{
+            width: 90%;
+            bottom: 0;
+            padding: 10px 1rem;
+        }
+
+        .flex-btn{
+            margin: 0;
+            left: 20%;
+            overflow-x: hidden;
+            width: 100%;
+        }
+        .dp{
+            width: 50px;
+            height: 50px;
+            left: 3rem !important;
+            top: .7rem;
+        }
+        
+        .back{
+            top: 2.7rem;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            left: 1rem;
+        }
+        .user-name{
+            left: 7.5rem !important;
+            top: 2.8rem;
+            position: absolute;
+            font-size: .9rem;
+        }
+
+        .dot{
+            margin-left: 4.5rem;
+        }
+
+        .info img{
+            right: 2.5rem;
+            width: 20px;
+            height: 20px;
+        }
+
+        .chat-section h5{
+            width: 200px;
+            margin-left: 50px;
+        }
+
+        .cht-sec{
+            border-radius: 10px 15px 15px 0;
+            padding: 10px;
+            width: 280px;
+            padding-bottom: 2rem;
+        }
+        .cht-sec h4{
+            width: 200px;
+            margin-left: 50px;
+            margin-top: -45px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .cht-sec img{
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+        }
+
+        .picture{
+            margin-left: 3rem;
+            margin-top: -3.5rem;
+        }
+
+        .flex-btn button{
+            margin: 5px;
+        }
+
+        .arrows{
+            right: 1.3rem;
+        }
+    }
+
+    .dp img{
+        border: 3px solid #d7b690;
+    }
