@@ -110,7 +110,6 @@ body{
     border-radius: 10px 15px 15px 0;
     padding: 10px;
     width: 350px;
-    padding-bottom: 2rem;
 }
 
 .cht-sec h5{
@@ -134,7 +133,8 @@ body{
     object-fit: cover;
 }
 
-#t1, #t2, #t3,#t4,#t5,#t6,#t7,#t8,#t9, #h2, #h3,#h4, #h5,#h6, #h7, #h8, #h9{
+#t1, #t2, #t3,#t4,#t5,#t6,#t7,#t8,#t9,#t10,#t11,#t12, #t13, #t14, #t15, #t16, #t17,
+#h2, #h3,#h4, #h5,#h6, #h7, #h8, #h9, #h10, #h11, #h12, #h13, #h14, #h15,#h16, #h17{
     display: none;
 }
 
@@ -144,6 +144,7 @@ body{
     padding: 10px 10px;
     margin-left: 4rem;
     margin-top: -3.5rem;
+    width: 220px;
 }
 
 .picture img{
@@ -196,6 +197,19 @@ body{
     /* margin:0 1rem; */
     border-radius: 10px;
     margin: 1rem;
+    cursor: pointer;
+}
+.flex-btn a{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    /* margin:0 1rem; */
+    border-radius: 10px;
+    margin: 1rem;
+    margin-left: 150px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .red{
@@ -203,6 +217,10 @@ body{
     font-size: 1rem;
 }
   
+.space{
+    width: 30px;
+    height: 80px;
+}
 
     @media only screen and (max-width: 650px) {
         .chat-container{
@@ -295,4 +313,8 @@ body{
 
     .dp img{
         border: 3px solid #d7b690;
+    }
+
+    .last-btn{
+        margin-left: 150px;
     }
