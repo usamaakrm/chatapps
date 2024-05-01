@@ -309,6 +309,11 @@ body{
         .arrows{
             right: 1.3rem;
         }
+
+        .flex-btn a{
+            margin-left: 50px;
+
+        }
     }
 
     .dp img{
