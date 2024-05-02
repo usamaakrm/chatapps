@@ -1,3 +1,32 @@
+document.addEventListener('DOMContentLoaded', function() {
+  
+    const chatWindow = document.getElementById('main');
+    let isScrolledToBottom = true;
+    let timeout = null;
+
+    function throttledScroll(event) {
+      
+        console.log( `scrollTop ${chatWindow.scrollTop}` )
+      
+        console.log( `scrollHeight ${chatWindow.scrollHeight}` )
+      
+        console.log( `clientHeight ${chatWindow.clientHeight}` )
+        
+        isScrolledToBottom = chatWindow.scrollHeight - chatWindow.clientHeight <= chatWindow.scrollTop + 20;
+        
+    }
+
+    chatWindow.addEventListener('scroll', throttledScroll);
+
+    function addMessage() {
+        if (isScrolledToBottom) {
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+        }
+    }
+    setInterval(addMessage, 100);
+});
+
+
 t1 = document.getElementById("t1")
 setTimeout(()=>{
     t1.style.display = "block ";
