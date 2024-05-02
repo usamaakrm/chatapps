@@ -199,7 +199,7 @@ body{
     margin: 1rem;
     cursor: pointer;
 }
-.flex-btn a{
+.last-btn a{
     background-color: #007bff;
     color: white;
     border: none;
@@ -207,7 +207,7 @@ body{
     /* margin:0 1rem; */
     border-radius: 10px;
     margin: 1rem;
-    margin-left: 150px;
+    margin-left: 220px;
     cursor: pointer;
     text-decoration: none;
 }
@@ -313,6 +313,11 @@ body{
         .flex-btn a{
             margin-left: 50px;
 
+        }
+
+        .last-btn a{
+            margin-left: 30px;
+            left: 15%;
         }
     }
 
