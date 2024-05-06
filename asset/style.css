@@ -228,7 +228,7 @@ body{
         .bottom-section{
             width: 90%;
             bottom: 0;
-            padding: 10px 1rem;
+            padding: 5px 1rem;
         }
 
         .flex-btn{
@@ -241,11 +241,11 @@ body{
             width: 50px;
             height: 50px;
             left: 3rem !important;
-            top: .7rem;
+            top: -10px;
         }
         
         .back{
-            top: 2.7rem;
+            top: 1.8rem;
             position: absolute;
             width: 25px;
             height: 25px;
@@ -253,7 +253,7 @@ body{
         }
         .user-name{
             left: 7.5rem !important;
-            top: 2.8rem;
+            top: 1.5rem;
             position: absolute;
             font-size: .9rem;
         }
@@ -304,6 +304,7 @@ body{
 
         .arrows{
             right: 1.3rem;
+            margin-top: 0px;
         }
 
         .flex-btn a{
