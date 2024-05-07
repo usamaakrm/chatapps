@@ -293,9 +293,17 @@ body{
             object-fit: cover;
         }
 
+        .cht-sec{
+            margin-top: -20px;
+        }
+
+        .chat-section{
+            padding-top: 30px;
+        }
+
         .picture{
             margin-left: 3rem;
-            margin-top: -3.5rem;
+            margin-top: -3rem;
         }
 
         .flex-btn button{
